@@ -7,6 +7,22 @@
 
 </head>
 <body>
-<script src="Adamandeva.js"></script>
+<script src="apple.js"></script>
+<script src="human.js"></script>
+<script>
+    let apple = new Apple();
+    let adam = new Human('adam', 'true',80)
+    let eva = new Human('eva', 'false', 50)
+    adam.eat(apple);
+
+    setInterval(eat, 10)
+
+    function eat() {
+        adam.eat(apple)
+        adam.getMaxWeight();
+        console.log(adam.getWeight())
+    }
+
+</script>
 </body>
 </html>
